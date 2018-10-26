@@ -1,0 +1,30 @@
+<idea-plugin>
+    <id>com.sashashpota.DTOGenerator</id>
+    <name>DTO Generator</name>
+    <version>1.0</version>
+    <vendor email="support@yourcompany.com" url="http://sashashpota.com">sashashpota.com</vendor>
+
+    <description><![CDATA[
+      DTO Generator
+    ]]></description>
+
+    <change-notes><![CDATA[
+      DTO Generator
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="173.0"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+<actions>
+    <group id="DTOGenerator.Menu" text="Menu">
+        <add-to-group group-id="GenerateGroup" anchor="last"/>
+        <action id="DTOGenerator.GenerateAction"
+                class="com.sashashpota.dtogenerator.DTOGenerateAction"
+                text="Generate DTO"/>
+    </group>
+</actions>
+
+</idea-plugin>
